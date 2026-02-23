@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    background: linear-gradient(135deg,#eef2ff,#f8fafc);
+    font-family: 'Poppins', sans-serif;
+    color:#1e293b;
+}
+
+/* ================= GLOBAL HEADER (HOME & ADMIN) ================= */
+
+.main-header {
+    background: linear-gradient(135deg,#4f46e5,#7c3aed);
+    color: white;
+    padding: 25px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.main-header h2 {
+    font-weight: 700;
+    margin: 0;
+}
+
+.main-header small {
+    opacity: 0.85;
+}
+
+/* ================= CARD ================= */
+
+.card {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* ================= STAT CARD ================= */
+
+.card-stats {
+    border-radius: 18px;
+    color: white;
+    padding: 25px;
+}
+
+.stats-primary {
+    background: linear-gradient(135deg,#4f46e5,#6366f1);
+}
+
+.stats-info {
+    background: linear-gradient(135deg,#06b6d4,#0ea5e9);
+}
+
+.stats-danger {
+    background: linear-gradient(135deg,#ec4899,#f43f5e);
+}
+
+.card-stats h2 {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* ================= TABLE ================= */
+
+.modern-table {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modern-table thead {
+    background: #f8fafc;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.modern-table tbody tr {
+    transition: 0.25s;
+}
+
+.modern-table tbody tr:hover {
+    background: #eef2ff;
+}
+
+/* ================= BADGE ================= */
+
+.badge-soft {
+    background: #eef2ff;
+    color: #4f46e5;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+/* Gender */
+.badge-male {
+    background: #e0f2fe;
+    color: #0284c7;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.badge-female {
+    background: #fce7f3;
+    color: #be185d;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+/* ================= ADMIN FORM ================= */
+
+.admin-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.admin-form .form-control,
+.admin-form .form-select {
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.admin-form .form-control:focus,
+.admin-form .form-select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 0.2rem rgba(99,102,241,0.15);
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.btn-gradient {
+    background: linear-gradient(135deg,#4f46e5,#6366f1);
+    border: none;
+    color: white;
+}
+
+.btn-gradient:hover {
+    opacity: 0.9;
+}
+
+.btn-edit {
+    background: #e0f2fe;
+    color: #0284c7;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+
+.btn-edit:hover {
+    background: #bae6fd;
+}
+
+.btn-delete {
+    background: #fee2e2;
+    color: #b91c1c;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+
+.btn-delete:hover {
+    background: #fecaca;
+}
+
+/* ================= ICON STYLE ================= */
+
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.15);
+    font-size: 18px;
+}
+
+/* ================= SEARCH BOX ================= */
+
+.search-box input {
+    border-radius: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+    .card-stats {
+        text-align:center;
+    }
+}
+
+/* ================= DIAGRAM ================= */
+
+.chart-card {
+    padding: 40px;
+}
+
+.chart-container {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    margin: auto;
+}
+
+.chart-center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.chart-center-text h4 {
+    font-weight: 700;
+    margin: 0;
+    color: #4f46e5;
+}
+
+.gender-box {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.male-box {
+    border-left: 5px solid #0284c7;
+}
+
+.female-box {
+    border-left: 5px solid #be185d;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 10px;
+}
+
+@media(max-width:768px){
+    .chart-container {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* ================= ADMIN HEADER ================= */
+
+/* ================= HEADER GLOBAL ================= */
+
+.main-header,
+.admin-header {
+    background: linear-gradient(135deg,#4f46e5,#7c3aed);
+    padding: 30px 0;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.main-header h2,
+.admin-header h3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.main-header small,
+.admin-header small {
+    opacity: 0.9;
+}
+
+.admin-header {
+    margin-bottom: 50px;
+}
+
+/* ================= ADMIN FORM ================= */
+
+.admin-form-card {
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+    background: white;
+    transition: 0.3s;
+}
+
+.admin-form-card:hover {
+    transform: translateY(-5px);
+}
+
+.form-header h5 {
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.form-header small {
+    color: #64748b;
+}
+
+.admin-form label {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.input-group-text {
+    background: #eef2ff;
+    border: none;
+    color: #4f46e5;
+}
+
+.admin-form .form-control,
+.admin-form .form-select {
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.admin-form .form-control:focus,
+.admin-form .form-select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 0.2rem rgba(99,102,241,0.15);
+}
+
+/* ================= TABLE ================= */
+
+.modern-table {
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.06);
+}
+
+.modern-table thead {
+    background: #f8fafc;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.modern-table tbody tr:hover {
+    background: #eef2ff;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-gradient {
+    background: linear-gradient(135deg,#4f46e5,#6366f1);
+    border: none;
+    color: white;
+    border-radius: 12px;
+}
+
+.btn-gradient:hover {
+    opacity: 0.9;
+}
+
+.btn-edit {
+    background: #eef2ff;
+    color: #4f46e5;
+    border-radius: 10px;
+    padding: 6px 12px;
+}
+
+.btn-edit:hover {
+    background: #c7d2fe;
+}
+
+.btn-delete {
+    background: #fee2e2;
+    color: #b91c1c;
+    border-radius: 10px;
+    padding: 6px 12px;
+}
+
+.btn-delete:hover {
+    background: #fecaca;
+}
